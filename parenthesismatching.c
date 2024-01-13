@@ -81,7 +81,7 @@ int parenthesisMatch(char *exp){
 
 int main()
 {
-    char exp[] = "8)*(9)"; //expression
+    char *exp = "8)*(9)"; //expression
 
     if (parenthesisMatch(exp))
     {
