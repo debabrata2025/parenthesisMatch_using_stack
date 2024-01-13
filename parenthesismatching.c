@@ -48,8 +48,9 @@ void pop(struct stack *sp){
     }
 }
 
-
+//parenthesis macth function
 int parenthesisMatch(char *exp){
+    //creating a stack pointer 
     struct stack *sp;
     sp->top = -1;
     sp->size = 100;
@@ -80,7 +81,7 @@ int parenthesisMatch(char *exp){
 
 int main()
 {
-    char exp[] = "8)*(9)";
+    char exp[] = "8)*(9)"; //expression
 
     if (parenthesisMatch(exp))
     {
